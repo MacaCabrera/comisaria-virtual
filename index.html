@@ -1,119 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-141534999-2', 'auto', 'instancia');
-        ga('instancia.send', 'pageview');
-        </script>
-
-        <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="xN0NWRPrRljS5PNCok0pBnXvHJeSKkso3fnmTKmt">
-
-    <title>Comisaria Virtual</title>
-    <meta name="description" content="Simple">
-    <meta name="keywords" content="Simple">
-
-    <!-- Styles -->
-    <link href="https://comisariavirtual.cl/css/app.css " rel="stylesheet">
-
-    <meta name="google" content="notranslate"/>
-
-    <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="https://i0.pngocean.com/files/533/939/716/akatsuki-naruto-vector-graphics-sasuke-uchiha-clip-art-naruto.jpg">
-    
-    <style type="text/css">&quot;a.nav-link:hover{border-radius:4px;color:#ffffff;background-color: #000000}.nav-item.login.btn-white a.nav-link {color: #ffffff;-webkit-transition: all .2s ease;transition: all .2s ease;background-color: #007328;}.card .card-header.draft {color: #000000;background: #ffffff;}.card a.card-footer {border: none;color: #0054abfont-size: 16px;text-align: left;background-color: #ffffff;}.simple-list-menu a.list-group-item.active, .simple-list-menu a.list-group-item:hover {background-color: #007328;color: #ffffff;}.btn-danger {color: #ffffff;background-color: #007328;border-color: #007328;}.btn-danger:hover{color: #ffffff;background-color: #000000;border-color: #000000;}.btn-light {color: #ffffff;background-color: #007328;border-color: #007328;}.btn-light:hover{color: #ffffff;background-color: #000000;border-color: #000000;}ul.steps li.active {border-bottom: 8px solid #007328;}&quot;</style>
-
-</head>
-<body>
-<div id="app" >
-    <nav class="navbar navbar-expand-lg navbar-light bgcarab">
-    <div class="container">
-        <a class="" href="https://comisariavirtual.cl">
-            <div class="media">
-                <img class="align-self-center mr-3 logo"
-                     src="https://pngimage.net/wp-content/uploads/2018/05/akatsuki-logo-png.png"
-                     alt="ACABSUKI"/>
-                <div class="media-body align-self-center name-institution" style="color: #007328;"><!--Cambio Color nombre institucion-->
-                    <h5 style="color: #CB1717;" class="mt-1">ACABSUKI</h5>
-                    <p></p>
-                </div>
-            </div>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mt-2">
-                               
+                                    <li class="nav-item login-default mr-3">
+                        <a href="https://comisariavirtual.cl/login" class="nav-link">
+                            Ingreso miembros
+
                         </a>
                     </li>
                     <li class="nav-item login">
-                     
-                       
-                        </a>
-                    </li>
-                            </ul>
-
-            <ul class="simple-list-menu mt-1 list-group d-block d-sm-none">
-                <a class="list-group-item list-group-item-action  active"
-                   href="https://comisariavirtual.cl">
-                   
-                </a>
-
-                            </ul>
-        </div>
-
-    </div>
-</nav>
-    <div class="main-container container pb-5">
-            <h1 class="title">Manifiesto ACABSUKI</h1>
-    
-    <hr>
-    <br>
-
-    <div class="row">
-        <div class="col-sm-12">
-            <section id="simple-destacados">
-    <div class="section-header">
-                <h2>Información relevante</h2>
-            </div>
-    <div class="row">
-                                                                                                                                                                                                                                                                                                <div class="col-md-4 item">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="media">
-                                                    <img src="data:image/png;base64,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" class="img-service">
-                                                <div class="media-body">
-                            <p class="card-text">
-                                ACABSUKI es una organización que busca acabar con la tiranía y la opresión a través de medios pacíficos, pero que pronto cambiaría sus métodos hasta volverse una organización violenta. Sus miembros son un grupo sumamente combativo, aunque eclipsado por el enemigo más importante del momento: Piñera.
-.
-La organización está compuesta por los chilenos que están cansados de los abusos. Cada miembro de Akatsuki es un rebelde, temidos por sus tremendos poderes y su naturaleza combativa y resiliente.
-                            </p>
-                            <p></p>
-                                                    </div>
-           
-                            </div> <!-- fin div card -->
-        </div>
+@@ -114,751 +112,23 @@ <h2>Información relevante</h2>
                                                 <div class="col-md-4 item">
             <div class="card text-center">
                 <div class="card-body">
-                    
-              
+                    <div class="media">
+                                                    <img src="https://comisariavirtual.cl/img/icon/chat.png" class="img-service">
+                                                <div class="media-body">
+                            <p class="card-text">
+                                Iniciar Permisos temporales SIN ClaveÚnica
+                            </p>
+                            <p></p>
+
+
                                                     </div>
                     </div>
                 </div>
 
-                  
+                                    <a href="https://comisariavirtual.cl/tramites/iniciar/49"
+                       class="card-footer ">
+                                                    Iniciar
+                                                <span>&#8594;</span>
+                    </a>
+
                             </div> <!-- fin div card -->
         </div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             </div>
@@ -121,38 +38,730 @@ La organización está compuesta por los chilenos que están cansados de los abu
 
 <section id="simple-categorias">
     <div class="section-header">
-        
+        <h2>Categorías</h2>
+
     </div>
-    
+    <div class="row">
+                    <div class="col-lg-3 col-md-6 item">
+                <a href="https://comisariavirtual.cl/home/procesos/2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="media">
+                                                                    <i class="icon-archivo"></i>
+                                                                <div class="media-body">
+                                    <p class="card-text">
+                                        Constancias
+                                        <font size="3">
+                                            <br/>Permite realizar una certificación de un hecho que afecta a una persona
+                                        </font>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                    <div class="col-lg-3 col-md-6 item">
+                <a href="https://comisariavirtual.cl/home/procesos/3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="media">
+                                                                    <i class="icon-archivo"></i>
+                                                                <div class="media-body">
+                                    <p class="card-text">
+                                        Permisos Temporales y Salvoconductos
+                                        <font size="3">
+                                            <br/>Autorización de circulación temporal por Estado de Excepción de Catástrofe
+                                        </font>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
+</section>
+
+    <section id="simple-destacados">
+        <div class="section-header">
+                            <h2>Otros trámites</h2>
+                    </div>
+        <div class="row">
+                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/heart.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            01 Permiso Temporal Individual - Asistencia a establecimientos de salud
+                                        </p>
+                                        <p>Autorizaciones temporales para asistencia a centros, servicios y establecimientos de Salud por hora concertada con anterioridad o para efectuar el proceso de vacunación. Podrá incorporar a un acompañante inscribiéndolo con nombre completo y RUT.
+Permiso con vigencia por 12 horas.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/71"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/shopping-cart.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            02 Permiso Temporal Individual - Compras insumos básicos
+                                        </p>
+                                        <p>Autorizaciones temporales para asistir a farmacias, supermercados, mercados y/o lugares de venta de insumos básicos, ya sea para la compra de alimentos, medicamentos y/o insumos básicos.
+Permiso con vigencia por 04 horas. Máximo 02 permisos a la semana.
+No válido en horario de toque de queda.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/68"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/favorites.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            03 Permiso Temporal Individual - Salida de personas con espectro autista u otra discapacidad mental
+                                        </p>
+                                        <p>Autorizaciones temporales para realizar salidas con personas que presentan trastornos del espectro autista u otra discapacidad mental.
+El cuidador o acompañante deberá solicitar el permiso.
+Será válido por 02 horas desde su emisión.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/75"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/map-location.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            04 Permiso Temporal Individual - Paseo de mascotas
+                                        </p>
+                                        <p>Autorizaciones temporales para pasear a mascotas o animales que estén bajo su cuidado, con desplazamiento reducidos dentro de las dos cuadras a la redonda del domicilio o residencia.
+Permiso con vigencia por 30 minutos, con un máximo de 02 veces al día.
+No será válido en horario de toque de queda.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/67"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/money.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            05 Permiso Temporal Individual - Pago de Servicios Básicos
+                                        </p>
+                                        <p>Autorizaciones temporales para realizar pagos, gestiones en Bancos, Cooperativas de Ahorro y Crédito u otras Instituciones Financieras, servicios básicos, gestiones en Notarías y/o cobros de pensiones.
+Permiso con vigencia por 04 horas, con un máximo de 02 permisos a la semana.
+No será válido en horario de toque de queda.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/65"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/house.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            06 Permiso Temporal Individual - Retorno a residencia habitual
+                                        </p>
+                                        <p>Autorizaciones temporales para retornar al lugar de residencia habitual.
+Este permiso tendrá una validez de 24 horas.
+Deberá realizar CUARENTENA OBLIGATORIA por 14 DÍAS al retornar.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/74"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/infinity.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            07 Permiso Temporal Individual - Asistencia a funeral familiar directo
+                                        </p>
+                                        <p>Autorización temporal para asistir a funerales de familiar directo.
+Permiso con vigencia por 05 horas si reside en la misma región del funeral y 24 horas si el funeral es en otra región.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/70"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/route.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            08 Permiso Temporal Individual - Retiro de alimentos desde organismos públicos
+                                        </p>
+                                        <p>Autorizaciones temporales para realizar el retiro de alimentos desde organismos públicos, tales como JUNAEB u otros.
+Este permiso tendrá una validez de 06 horas, con un máximo de 01 vez a la semana.
+No válido en horario de toque de queda.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/72"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/bookmark-1.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            09 Permiso Temporal Individual - Comparecencia a una citación en virtud de la Ley
+                                        </p>
+                                        <p>Autorizaciones temporales para comparecer a una citación a la que un abogado u otra persona deba concurrir en virtud de la Ley.
+Permiso con vigencia hasta que se cumpla la gestión.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/66"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/users.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            10 Permiso Temporal Individual - Entregar alimentos u otros insumos de primera necesidad a Adultos mayores
+                                        </p>
+                                        <p>Autorizaciones temporales para entregar alimentos u otros insumos de primera necesidad a adultos mayores.
+Permiso con vigencia por 02 horas.
+Un máximo de 02 permisos a la semana.
+No válido en horario de toque de queda.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/121"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/home.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            11 Permiso Temporal Individual - Cambio de domicilio
+                                        </p>
+                                        <p>Autorizaciones temporales para realizar cambios de domicilio.
+Permiso con vigencia por 24 horas.
+Se podrá solicitar solo una vez.
+No válido en horario de toque de queda.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/122"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/locked.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            12 Permiso Temporal Individual - Proporcionar alimentos o insumos de primera necesidad en Recinto Penitenciario
+                                        </p>
+                                        <p>Autorizaciones temporales para proporcionar alimentos u otros insumos de primera necesidad en Recintos Penitenciarios.
+Permiso con vigencia por 03 horas.
+Un máximo de 02 permisos a la semana.
+No válido en horario de toque de queda.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/123"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/home-2.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Abandono de Hogar
+                                        </p>
+                                        <p>Dejar constancia cuando usted o un tercero deja el lugar de residencia.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/16"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/bell.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Certificado de Bomberos Accidentados
+                                        </p>
+                                        <p>Dejar constancia de un accidente en acto de servicio, para ser presentada en la Comisión para el Mercado Financiero.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/19"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/file-1.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Contingencia Nacional: Información delitos y saqueos
+                                        </p>
+                                        <p></p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/26"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/users.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Fines Laborales
+                                        </p>
+                                        <p>Dejar constancia de la infracción de un contrato de trabajo o acuerdo laboral, por parte del empleador o trabajador.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/12"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/file-1.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Información Importante: Salvoconducto Colectivo Empresas Básicas
+                                        </p>
+                                        <p></p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/42"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/chat.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Iniciar Permisos temporales SIN ClaveÚnica
+                                        </p>
+                                        <p></p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/49"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/money.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Pensión de Alimentos
+                                        </p>
+                                        <p>Dejar constancia por incumplimiento del pago de pensión de alimentos acordada entre las partes.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/20"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/id-card-4.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Pérdida de Documentos
+                                        </p>
+                                        <p>Para dejar constancia por pérdida de documentos para ser presentada ante las entidades correspondientes.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/25"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                                            <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/smartphone-1.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Pérdida de Teléfono Móvil
+                                        </p>
+                                        <p>Dejar constancia de la pérdida de su teléfono móvil para ser presentada ante la compañía telefónica y/o entidad solicitante.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/14"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/edit-1.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Reclamos al actuar policial
+                                        </p>
+                                        <p>Este módulo tiene por finalidad que usted pueda reportar conductas indebidas de parte de funcionarios de Carabineros.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/22"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/calendar-1.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Régimen de Visitas
+                                        </p>
+                                        <p>Dejar constancia por incumplimiento  o entorpecimiento del régimen de visitas por alguna de las partes.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/15"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/folder-14.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Salvoconducto Colectivo - Empresas Básicas
+                                        </p>
+                                        <p>Herramienta que permitirá los desplazamientos necesarios para el cumplimiento de las funciones de los empleados y funcionarios de empresas de servicios públicos y utilidad pública (incluidos los traslados entre su lugar de residencia y el de trabajo) 
+Para que puedan solicitar el documento se le pide al representante legal de las empresas/institución requerir el permiso, individualizando (nombre completo y RUT) a todos los empleados, el cuál tendrá una vigencia de 15 días. 
+La solicitud debe acotarse únicamente al personal necesario para aquellas funciones, tareas, procesos o áreas de gestión o servicio de la organización que no pueden suspenderse por resultar imprescindibles para garantizar el servicio.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/38"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                                            <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/infinity.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Salvoconducto individual - Trámites funerarios familiar directo
+                                        </p>
+                                        <p>Herramienta disponible para toda la ciudadanía, en la cual podrá solicitar autorización temporal para realizar trámites funerarios de familiares directos.
+Permiso con vigencia por 04 horas si reside en la misma región del funeral y 24 horas si el funeral es en otra región.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/37"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/photos.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Salvoconducto individual - Tratamientos médicos
+                                        </p>
+                                        <p>Herramienta disponible para toda la ciudadanía, en la cual podrá solicitar autorización temporal para asistir a centros, servicios y establecimientos de Salud por tratamiento médico.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/login/claveunica?redirect=https://comisariavirtual.cl/tramites/iniciar/36"
+                                   class="card-footer claveunica">
+                                                                                                                        <i class="icon-claveunica"></i> Iniciar con Clave Única
+                                                                                                                <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
+                    </div>
+                                                                                                <div class="col-md-4 item">
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="media">
+                                                                            <img src="https://comisariavirtual.cl/img/icon/notepad-2.png"
+                                             class="img-service">
+                                                                        <div class="media-body">
+                                        <p class="card-text">
+                                            Seguimiento reclamo
+                                        </p>
+                                        <p>Permite revisar el estado en que se encuentra tu reclamo.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                                                            <a href="https://comisariavirtual.cl/tramites/iniciar/24"
+                                   class="card-footer ">
+                                                                            Iniciar trámite
+                                                                        <span class="float-right">&#8594;</span>
+                                </a>
+                                                    </div>
+
 
                     </div>
                                                     </div>
-    </section>
-        </div>
-    </div>
-        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABCFBMVEX+/v4AAAD////0Hh71HR71HhwDAgAEBAT6+vrz8/P39/f7+/vn5+fv7+/0GhnxGRrb29vV1dVoaGibm5upqanh4eHIyMjAwMBXV1clJSWAgIAYGBjPz8/BwcF2dnY7OzvsAAC1tbVCQkKKioo3NzeRkZFKSkphYWGkpKQTExMoKChqamqOjo56enoeHh5ZWVn/6Of/8/PxAAD94eH3vr3yhYPoLCztaWnpCAj91dP7vbzkERHzkI/weHb97u3yn5/tWFnsR0bnJif4sbH4oKHuionrTUz9y83wcHD+2NTnNTfsXF3kNzblKynlkZHoHx99a2o9KyxuVVdYSUoaAAWpl5i6qquUe3uS6BnZAAAgAElEQVR4nO1dCVfiyraGgjRDIICMMibMg6LiFNt2arvVtvsc7xvuu///n7zaNaWSVCAg2n3Wcq9zWkRI6sveteeqikQ+6IM+6IM+6IM+6B0JIfwfJvIK//O7x7MtQpwiqWy5nAcqZ5PO+797fK8hnSBIZwpWsT7qTOeJqKDJfLczqhetQib9T4VJxp0qlOrDeXQp7Q7rpUI28s+CCaNN5q397nJsMnXrVln/h4DUMcByaTb1Ykj0h7XRjnhbklj+sr9fzQJG/XdDWEqYDeXi0IuumUmlknS+DZx3e4VsKlXpNaQPztvV1B/LSWIDUGbc9bIIUxI5dMDfLHBdWnd9djJrpf9IjGDr0lZNPcuywNpKpQLPoMTe23NAtz0f3+2V/zyMeJz5umDccFzOyEMuMxiWhLCJX1tYVAE8/1yjyvlZa/1Jwoo1A9KrzuQbEmXakhACmiIWwDz+yT8HQpoaRaPVcjrNPzfD71WYjM+Lf47awSMdy6pzhIjMStOrCoY/RSzkDn+vSAQ0M97FrOPvVfA7Bedr+3+IsKL0eB6VdcuMuZ998Y7lzLm84HWevVMRT2cOGok8mJJFP9bGH/rdbGT4ZKpjVgEmZyqOgYf5pgXSmhWPYpCiELOch/vw2wRe4b9kqNJtl38vGxGq9qNewnjSRH1a/J0elz5g7ogKqTWeNdoVAnHMPtZk0zC6I4tAPfsbZRXlVebBAoSgNNAOE959wtFJ/8CxDRYVyF14ElX6van4KyjSvLjepKT/Jogo3SMjqFnlcqvmQUi1CxPgHRI7AQMjnDd1EM9BbZhxeAicJmo1AfNxj10NHlG3+TvYiAWKjHXINMZYIMTY0hMqgEwx1iSfpsg+VXbeGjpCWo0mEnQ+zrnu6nTwP7PsO0PE7nV6n9y/LcZZ50Mq+PBM2W/ZTGsmZK/KP8O5BewkUiEZjQRcDnzZBoj1e2pVVJ2T2xOdUAB3LCt8rywbOQmAiV6Z1Nujji9ObPSsQrZsCfNRYAjnumxNQZwzwMad92QjStbZDAE0mC39TM8ZORgBvdLbnWOrUd1x3p9Pp53uEFMXx/sTCSrjPfgA2Q5IOfaR+POYQA4glYDPTKx3m40o34k6E0w4IXVmutNMYUR3KHsmndnAauazuiS9kXSmUBnXD1xhJJmaZTAOXL0yZ4E/pnr6XSDKSgVmYZMyYZbhEwoAcO4Me1aeGXbXRXSWiEpnqsXRlHFyl7s5SO8zxhL7AjayU2ziuKxTeA+IuhTsjPD9k7ucm8RaR/uoPCa2YzioZBXgXERhFko71K+pZ8gbqQMuvWXyuPp7ea62rDdXNygjR/BzkLwSxRVhCBvAksYMMhIhHzhB2RwQ49PtWaW6mKQDIrdCOWfxlO+9cZ4VFXYd1YB/gmKPAOa6bBJ3WuvnIvDnC73dqIv6fOqSh6A36/AQZm86GakGkFIUQ/Jo2zXwrSN0Pk2LmbXh0YtjTlZHMsKKo5qyltDKwxSKJLcOjQ0BBNL9nKXAiBjzg8prnEiQSSeunDnXTvOJSZ5h5q24SJyLUSSzI7ORe19pkFWI5155d8yuIos3U0Q+ZhCRJGX7CcmC7SDy3hqeLrjHqNmRbleCJ58FS9HLbMck45iTCMocxxjgG4LClnKOGHviTSCSm3GhLEm3a+y0Cf8Ivi3cGfy9JMU4I/PegzCaqL8NRGIG81y1Zfdd0zFaK2zVpcI2schnAvjtuoywibV2Y9u2nweuYBQGGYJRjn7n1vatFMq0qYwMPTwEObKijW1zkTkyDUhccFmtTpmctt/E7ecRaD8teIiDR5L0Abeuv82b0glPCEzUNFqjVT+deKLTylv5/ChNbgCx4ZzPeporh4nf3R5EnfjUdFrMiJopUoeyDM94J/WGQQ1qEjmpZXgQ0iYzZEZGU9tapdzRnBgnxpOF8LyQpX5o8W2DNpIXF8+XuPosE0Aed3I75qkiK002By3Q2ViAKm+eeQc8XK12dR5jUNrfyuNFGZc/QSI2HgriqfD2uRMn77qbpg83Ktha3Ib9TckOTFRKGOFJ8T6JTNRsEDi7JHpsuUZTff0I0Mx1xQTR1lRut/EAw40hQ+quXdBvBWozxHhebRallAWjIX+O1fdL06I00TedDMokPMPpvNJmyMUuTnmiWyfNd83R6sQiN5r+MsnO6x50yn/F6ABmYeOda3sIQjcv/9h4XjMQX4mdU+PNgtDAoaBBwFiirc3H4uhpD03KSH/vwmUwxMbGU1HPBFwy+nvKlrLtd9Fsw+HoTu+Lh94lL6saUNCk2dAqqmU0sfb1tifOKDJSDQnL6UYZRpSaqC83Xq1FkfNzq+xGqa5aTusbIQwQiXoYV5QmO46Orq+P6MvtkI4yAc2cG0wcqLioqBaGKwgdPt5c3d49Pz/fnX+/f7zeGkZ3oOPQcO0boIiqCSERna/WzJh3J+df7YVpUDIXueerx21lqf1uJCVrXYhOBW9daUCR+zvT0GKxGPwfi8W1mGaY9sP90Xb4iHaUA1tb2SQV7lo0TDiBDn+aRpxg04AwRILTsG8voBL/aphOh5GbeutdWU5cSFRbDfDkzKT4MEKQ0RinuPHy5YgtRHgNoaCpuJYjiVJKlRXCPbq5JJjijAQ8Db+tmbeH21A5qKcaXHR/LYRF5TUqK66ho28mm3wehMBP/K55e0R7iV+FMII6yuGtwUSUUor6SklHJ5daTI0wHtPgF/NURylrwwKjc5+8anjrmH01C3dTK66Ajs+UIhpzUGvmDWQ7u8Xyq3J0AXIamomiH81NqywOipzbagY6szGmfT2meYP2q0pxSd9qh7WYqHa5V+pRdG8KfD5wnI2a+R1y8lCUKznu6/oOidpcZ8OJBYooJ/JKW3/0bKxGGDOej7ApSkC+rMalav1pidSRXcjsn9ojbYdgIUHmQYiNvqRvMJknKAsZQYyRZ7M2UDyqFBlWFeEcCk+GlNGqWYwiD4YXnhY3zZevZ7ahSXy0TxGqEYQJIRibMFEZ+qyyZ/S7WdVXV05idAK+jNvMG2enJ8fX14/ntuPaxIyHCNqjCDEXqQ+xCRPL/kEmYJ1AiK8qnfeVihj9NDwiGjfPD2kZR/9iSwjPrqGuE6VzcbgpQtdyB4EwlMFQOgyrPaJrW6MIBQftJxz9Hp7c3/xAhxJC7euh7Fky5bABQqXZD1HsU0/hlck19JmbCg7EeDhCR6cv5mLx9eo858xE7eUYlWeDcWm81x4moEV1M4RqfTFdfSG0r/jezsrMBTq1PTKae0T6+YLEifI0jGmXx3Iz13AMY9pITJU6f2WlRu3PrFRRSPdqUvsJoRszF/OZRuChTCk2E9dGGEG+hY54Jq52nlXBVydE3PuiuRCC2Tv8amBhzeW8CA/R9fer85/n3+8vrll7ziY81JWOze5KhH4NBfnDlQgvbGIrXJy6X2CD4UMITs0jyeEsFvbZ04nTHL0uRKSr8p2rxFTp0obIPhGfVEJonB2h74AwlzPcCO0rhL6YjNOGYf76vClCdYixt/w6Sk0aXBZgSgLL2ZeFRxa/XmOEcUhkaO6/mBjRT9kDEGZzfcdGZTA6K76jigyD9AzJaF8fX5xcHOvfTTeOeO4Y/b2IaTkXwjiF/uNS1j9x8+F4Q4RK271cTBXqKbqrblrBA7o+Ob09y9mm/XL37NWZmFXYFfcgxHAWOHp6sl2f1oznww1nooohpWWXkVYHckoo0/iw6OPk6cy2MYA4Dh8oDHnceLod/mXEvNPQODtEF5cewdXM8yMi62sjVInpUt9UqX9VQorQxROwB4e0somQR43dz3twxmVVGjdeHlHy3KN7QFC/gfuaWd8sdvyVmt1luWGVcpoovoCOry5NLS6IJS40mTeQkTk1jZiE3lj8usCK1NZ8CImjE+nM64X11m/hAftrUcsmIlIUKxSaFN2/yPgEuRBqlxdIP7WNOM8vGubLFyyM3zFAfw7AOEd0OcPBOvVldXY4OKGElFlE/+exN2ZoaoTy0I1nzJeTW3OBJ6uN//11g/WJfmX6OEgegH3BVw4PwosqQkkFwiWOm9Ia+p4pnl4GD3YdCQUC46d5IKLj+9Onp6sv9/A6+fnOVORwQFGZV4ivtexkwldW/VKXwE5moKCrqhV934ceL424AiEk0jz23Ti7uXZc7MjxzZ1tqJJUUMCBsJGrgUY+NBuV9iI4satySr2xLzp8NgCP5kWokUKMCyGees+nn4+vj5JHhydfbl9MJT4CEWume7JIlmiORujJqAyhglWNStF47af+ZLIp5yFWD3VZAvzuAvsDfz1/vTQXRhA+SuYpXcBNMB6ETYgrs0qlIBFQxoYFz2c+2xpF6IaYw6bdj5CgpLzNqVBJnyLaND3hnYfh+x4VjlugqkGqDqGs+yPXREYBouHGR4mzyZ0TDswQuxA+6EifRj99ogYubA1ClVUM9GpUMu0JftHNggM0FABFOiYEJi9pf13D8rdPDOLKDDQlXaVqpkHt36p6hedxXJ8xYDGBMCYjzDF88fUhGtitSc4JwsQnYGIohMqkxCRImaoypR6RvjeJysS6z+DzMJZzEVeumqa07Et4aD8ytUESqSESC3TQKuc7SJmqRNqjSh8MgjCnOZpGIIwJNm6EMGaeoLRl9aBFAnjYVShERYClVI9B/ZgqY+H+7LHNbYJ/EpLGhJwL5VqSCjyk61T2KcSQPZWqKDio8w4ptpBzmV50v6Cq39B8AA3TBjJtPh3XhajZJ8kj2iNG13CGbIxFim6+AFuDVFko14NET5yFXoSGeXb6+eLi4vHm9pJgZJ5OaHwQSJ49nz2f35CMBmxKETQRPaIq9tWQKKAIoXIPXFoJJX8xfDAJCZvY3LP/+sazSfrjLQ4KiU71Y1yOmsjH4vL8ApLh3cByF3Kv5FSZi4Dcmcrgd2QfHx1fUufTjTAet2/xgz96/Pvvvz/Di1McIKnlNAxfNfvyWxK7N7WDJQglNtJClpt2wiN0mUN0sYCsBUFI4MU1MuWMh+tI8v7OXCxM8+XqENKhWiA+FUbPO5p5DiGJo8YRcv9wZa1UIV+AU6NC6GI3OlmQXARFCNGSloNE1Ncf6Ogcxw1EYM2zCxR5shXzUPLyfAi9EO9+iGw//ckQ8gSt846yVBrQVbEa4b0KobY4hRoMqAo6J8+OIcv2GoRQPX6UAksGiAHzIlRNLnVwoWJ324MwRhGyEcE0jMdYDYbr1Zj9cESzbB4wwQg98MhNXu4lLvK9hyWEDLEa4VydIlA53h6Epgch/NRyx9gf5wDATtg3SL/1tS2ERkg6i+Ka/SUpsRC6jlF4hOpFddiH9SklN8LPC3jAXoSXJH/PAWCIxq8jdGLSP8utbWEBsuuaP39IGZDvl9+YCnUhRGsiXMpDhB5pSZc1xnLC3tbxs3DjIISyT6CeGHcR7azxzMzlOO2Xq0dwcvSLm9vcwrwQ09Ax+sQD8g87oK9mtZT+sFUIjacI+i4jjC2+I/3OWI1wBWlxO3d39eUUEjyacZuUtAu3+QEIpwEIFXGIW5fSvi5XCoM869OTW8ORUuzD/UToyXRHUQESyh5XIB8N7OuCRTJMUWaU9CiBuMpRkQAoDIvb/WF1Pw9CUgaNSwjjxkMSfbHDIKRO7WpuGuaDvFUv9Q8ZQsWwA9YmrLSHEVa7lTNtXJ7wYB0pNe6O0A1GqPkRujkUy5GAKwRC+1EyHYQGWRSIcA2L7/YN0aPpiJbsmME/OcHEOEFoCrZxMfRbepKgyxm55dMT+8LgVbioXJtyO6JQH0FemyK2cOd00PULGWzOi1BiEh411go6Znd8JUJ8kRzNiixHmIP+cH00yHB8+X3aaUd+UeRegjzvlL9Q5cnpIFpXoTyU9aTzk8zDK4SuDAlhnIciHnxgXE0InU183SCFo+Hg7JjuMzAsVpvN1oBE6i2OULHwMiBRB9lKH7lTCejCXo0wHl/cQCgZ8yD0zsIc8M9++Pb448fF56czWGejLGoYxuWJt4z2KdpIcYSKUkRQSlhVxJeyVmRiP5lxhjCuRAhem2ZfkP4ap3CqRojt3fP9ERO86/szpU7FAG3sopbF5iYE4CeqA8k3FVmMwPSAorPYk9NBx181JmJxFWmgGO1zqP66sKs0Kf7gHVR+Dy8ujqFt6Med7echA5jtuPcZ+BRtCkdcsX4pMBOl4Le3MIO9b20JwhyIGnbajr8aKxBC5HyHo+X72xfbfrn7gmPewwcfF7EhfMGmPjWkbdMCIbV4xIFTVXUD+2N8WimhSJYQOcVqgTQpyAB4HtEkTU8ck4DpllI8XbUXHCufmqTdwTCfMZDjZ8MH8OxEAEw4w+IsROqMcFBxTtWJ4bedR7c2Gaqi+kRst/HrGmTZq4hiXoQ54ztC30RJ2LjEEE9cfZqgaKGZCAOEVL/MxAMkELb8gw7O6itC4KlvZSQWJjosAJFzcBhUnxg4xEfnphZbhdDA+ujwhSGK004bPH1lgKZ9ihVRpg/FDLeY5p0wSlWZUeMLqDZKBRIell3/NGNMoeYMmlRzRgW1+2+OtXeTCyF2fGhahJH5hOXUcVKNhfkAqYzmBABSoiATdKMIFkwpShHBW2WoDKI0aYVXfwR9MgSip/IZX9zhKI4VUVcgNEHjGvQ1eUokrc96+qB2fPsZLIkVFQDFmPrIGY5qKWhghVRfkSBngQv89/mZ1brd88a+woO6vzRiYRBeMTzc9dagLxNSQRAyPZ9ekM0w6w5AB2NZQqiq6i5pqFG0RLkzpiKBcHhF2yqcUYPeu8f8/ZIz1PBcETBWIrcRdLqQEGIJv0Y/TNPMPV+dUEcAdtb95ENoOTKqVDTLOhUUH991qRoBUUeQvTdkfJenWFVcPym7pXwIwRf7gQ7vzFxcIIR8yNHV1f0FbeNDKWBgwsfBAecg+aHwSifpIIDKGNi/oosLKzQnmmxJummfnWLrFjm543MwFlOLKpNrrKPMUxQ5uiJ1HBboQ8OJRFlocnbBgx8ugEpPc8nafKXv7atU8QHgl9efv1z9vL09P70hmwqAPZOmXABCamrAXNwgsBe0qAzB2EIgzJZGWbrDpot/Ce5yCoAq9b+sXV+1SMNXIHEAeqJuHHpcylpFpWochFrMyJ2efCEBYo7ykCDMlpvkPKUhvmCXQ+SDaVR4HpGNpaXoTVy2FFQVTSaUtVgXsghKl6u9eYGsugichS4exkmd2Fjg+F4THQ6A0HHCWpyJUBGmDRqjjKRFyQvVCrZlDVXK1j2loy5zDkVoUDLAtn7hQhjzIRRpG4KK/CJ6OEDTYM2RIGEEONckJndY2GnR9BNyEKYVbnd/Wdcf237cTcGdLQLlDumf6CMoYEgAc7m4jySLGBMNU9RvgLUmpCrP3LMykneIGLac6poYgKq9dPkqNBXXg5WvQFihsWkTGoADpFSBMOe0ihHG2j9pVpo7oCXH6ewMnD2YHYRqIV2+QZBykfOyrzCIdDkY9gdFS5EanrtSk4vFJYSwkIhcKMHEsk1zF7ujYsFV9HVepxWj9fSp+QYsnCBJRS1fmElnBW0XwIJ0b4oJt4SBjqNn8HVDGjiqKfnuECJlyvRMhbD8SMAO/8shOhZ0sl+t7JFbLe2iY1zM1/uTPtjOc5HsViHUcu4eTKcllUT8PRnhiKuyEIN1aOlyi4hsL9pkK02ya1GIPVuAkqQOfUjkVG00cJx7883VB83aNeMx+/kH3faRz8NPdO/wZTOEuGCJg4PacNjvT3epllzVaCQcN77lO8yExsoNgmTzePFiBLmmJhSvv9n+pJpGgvks3XqZ0CeiaSS16R84zSs5e9MTtdRdxQ3EG6PKsMX9cEC7y1eef+LybE4u1drGMH+SdqCTvxYi+0vdO7a6i+f6GMK8g1DFTbbApyXuTNq/QqwkpM76JEmzNlXiV3RDLPPgYwAu/lqAfyaxSMMCuoDgijyCo++XC1FIhnDw4QT+4qj+BKjT/lIR5RNqitVTe3+cRAWqdlZ33nIxTeNwOAHcI0Y1zEp+gTCCrk8v7ZxU38Z23XyGhCHKjsrgBUHbPglLbNO8vCWrLGGLUnFwxicqOEs1HIvusSynag2uhVcKKXyTdihWCPNqKYpwlQpmEPm/mI1XXxcL3gW3wCE7jWlb82iiQj6QfPz29PP86ur7/THhbGEaFQgJC7vL1YyTGYSDTMp8IcUqTUq+SbmNza01gGO0qNSusx8rdVYPT76fPzw///p1d37zSEP2LA1d6qKGJCjtD2TLqxAKU9EGEajRB7Tc3DPSowwToQLNbgU1mQUh5NkA3VFC2UGUW4KZlZEDBN3yu8OtVaZCSu4OcSyZaVC+hBogXQ+2CwfYJEt8MXGoPTV8SB0qwLG4CSev2xnVS1QwUEU+uyZKX7Ntw4MvnuxGHQ+2X2bqI9womSHFXlO9PRG3Xn/bPicZkCrQkl+CE73kvzJMRVveNdnTJlqB0Ouw5YmY90OuJqJJRW/svPa2fQJh6l9RcUHQkvTK/8X3ktbFOYOMGsU0Wo5QR2niHPRFLSlBhDSMniEjc0ddkyLRxP0Ndz4kIsowfiIBLbz87+qRK1xIjZni2N1vCXxLWEidy6q7iD8JpWfI910ebZ8knhMbb1BO1cy//+d/xRX/59/XbgDkNz1TKOTZOVirANIE1BC5M7zhNxb0FKEG4BCF3PtlCcijwv/9+z//+c+/K9fK8aNVsATpfHfIgqe0Fn6ASHd1+O+mqTAchJzHiguqaMNrwSy0yLiwyc44ycEQm37II7Jk3rNDDjdRNtIlpebX18ADgCnOMkQT/5RCbK0qDScpvjeiR1ZRwf/Nh/My4gfu4pkLQyuxA7DCKlJ2EcbEPjkttNCOhAy+3oOYC9pP4hcD0LvpGv19vV0K6b549OTMNjyfMntubzTsNUbGgp9pC3oUGji0oOclrDuFuE3MRgjz5gPmALzviQgK0p3DDKgz22m2qXiti5DolkS0Jq5HPfDN97DfEsG4VFt6r//olUtmMQ23czzPpqTeeDRBTkna1rXW2sx228R9kcmOJ5G4iWghdzuVIxlrbrq8TeJaBjKdLqdkM0vta03tjqkrX0RvfMRT4IiyNNUBJ0n3ojOHjaMNXQiXW9spgumvsSf2W9hIur+iZD+Z4nCWknpnN/VEUJofPNwp0twlC8uirfc9BZwTW8U7wA53kXhaQzp/NrfSvGBKj0Ev7GfFPt+V90foHG5RQWk4x6fAS17r5JB8V6X6lJzLuw+ZyTbXOhukbV5H0ukdhH/Z7pTl5yevO9WHCsZOz0LlfSQXwV9xQM/6BNvxO+XgSROh1jRRYH7X60biHCtHjo52nSH7nuqGHdol1N50N4nZSKbMij32Vl+ah/twbt2Yyyj5541PPnSNIsWUjNhdoEw6ozHVXn26HXdt2sjpzmHPsx55J31DD8vENBRJudF4j2TXdl/vJ+us+7ubFrWhEkddexc3HKEqbUAhGq8uxIj8u42DmVCS+g6zCrsqVEJYpW/3PYIpqTkPzJar3f41eRXpDkzb0C2cyJHAjIeJUEcjvfbu8hoJD8RtBeS0yYX9D+0DpWiis8Mm/WzViQmvuzVqiYy/qPiKSupGpzyp7+PkT4ewkrMCGSC2iiU6r7yZI66jlK8lqIXE6cSb+tuKGznZxY6TcUdpno/rvdFxpAhVhHWY1fuMjRXueAy3dcASvRcrsWItky1gDmaKeztd0Yw6b73FbCSbuDBxhAWkPJJoUoDdjc5aCyKdlkISkB6eQrnAG/+Ptn2kJb6ccw9yFLfTok0m5FaP5aa3ZFycEGdmn91nIqLQvfQWMSJ+6jiVUMy/6d5etCHtENR/g0M0nXiziURxqojGE2Z/56Wt5agQasobOhWoNzXM5N8UoMPFaB7xnkA4RfpASM7USm6Bj1CLcK/7yNDdj7CK4ZYDdsd8C/3NNeq0zD3UAnJXm/ulVx+0LvA5qa8qnYNjpLP3tnhuvPfuLBG+26Mj6GGTkYA+ASdLO+kVNq8sgQmyulFvyrcLTsZkJ82f5mirWlQiHRb7yZujTdPUv6i4dWt3nFrWMhlEUCHN96TrD608m44DaoDZNJy9BThnGNmu84T3aOcijquSnj3TZlZqvSIhfLpcdHRlgnUmst23Sd6CcbC33YM/vaRHkk7VtURWGU+ySLWh2MjKhCyFEv+o2fOsQaugZNESotHd2+vwm74lPjoecdsReW2hgGPQop1eC8rHOms+UD17EM1kuTTyHXJQg8dWGzcrQ6mfDyPNbz7L14DY5O4aBtcsIKRsRuYo2+NKJq0u5KNktmD1Rsoj0LDop4kP7FrIXH8jD9iHMcUllcwVzEhJ902Lrnococlwpz6uVpr5TCqdTCZT5UKlYu21DxSLOzjN6UTW5a7Txnbi3VAQhfGvVTN598E0ebl5wEeTxnzeCDhnOApqOMsfV62Zr7YndeQsxRq962nnKBNwunIFoYDjtELQEDnBH7iBo3oWlbkklN5Wh/ohIsu35Ii2FLbEY5+wN0NTjaglNqtph3qBhYXvy0AGMetn1R6IqFitlE9VJssRkj926qV8nyPEYpll0xM7a3l2i3n1N1W7mh4bNoOc6ozuxZGArdEhTTarFJXHMVKIViHtyDVG2B04xmeXa6LeW7lpqyFKUSpdj4PSpRKvMkKvfXoXBBcQjgotq1Tcq7eJEO4XKHsS8Jm81aPP4AC+mkVSWgiYXAu/B/1bYMw6mnQC2Q0yeSjCNmlY4tFdjxtBi24ZwLKgeSTtfIsRlsmGV2Nn/vZ/k4BKGMtCnTfqVrRfTHFdQRqZ9S5v+7NaGH42kyJsr/O0C/5QqVhhdZcDMIGVIkrDFrQE4u74nWz8UoioMItKOtPiXMmjjEW4ykV54Ox4NOKOdJ0ydo8jhOwa9QTwBafj7O9mICWMkWpPUlyoVWkZIIGZNyFqhP0RIoQ99rLLE0sdCAn3hw2OuyimX7Tz+nB6ewSL8xyzMCXjJVaV9EsAAAEXSURBVBm5IrjW3PEsORn5KU964ufgLDgfloYCX62q/zn4gPAUG7uDxFkSlgdnpaKc5azrbYieqwJSbLLdqOff2YMJQ/iRF+oNR8iiiYMGmWciz1l1ohDMurSA7d0EYFTdZmZymwSxTnXH41cPi8L1aUptVimeOKvt911uT83KvkMIuDmBAW/VHR/GNfi6VRWxYK+34//AZAbwVIsp/yyClEuJx7WuDbq8iGRK1AaFbaRb34dI5qVQHC2JcF3UnxWba6au/gQClOVqcdZdhnM+bI8r2cg/Dhwnlo3J5Cul4qDXPhh2GHWHo/3i2MpnWDnydw/0dSQvsxDvid//4eB8hLwv/gC/+oM+6IM+6IM+6IM+6IP+CPp/vaC9ZEx2fGMAAAAASUVORK5CYII=
-    </div>
-    <footer class="footer mt-auto py-3" style="background-color:#CB1717;" >
-    <div class="container">
-        <div class="row">
-            <div class="col-6 mt-1">
-                <a
-                </a>
-                <b
-                </a>
-                <br>
-            </div>
-            <div class="col-6 mt-1 text-right">
-                                    <p style="font-size: 14px;line-height: 26px;">
-                        Si quiere unirse a la rebelión, gritele asesinos a los pacos.
-                    </p>
-                            </div>
-        </div>
-
-
-        </div>
-    </div>
-
-<!-- Scripts -->
-</body>
-</html>
